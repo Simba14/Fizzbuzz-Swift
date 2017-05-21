@@ -1,26 +1,113 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FizzBuzz" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nqP-UC-BTl">
+                                <rect key="frame" x="205" y="420" width="99" height="40"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
+                                <state key="normal" title="Play Again">
+                                    <color key="titleColor" red="0.66666666666666663" green="0.58823529411764708" blue="0.85490196078431369" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3/5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bBb-TK-8I6">
+                                <rect key="frame" x="272.5" y="28" width="31.5" height="27.5"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
+                                <color key="textColor" red="0.66666666666666663" green="0.58823529411764708" blue="0.85490196078431369" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zF1-EC-5iD">
+                                <rect key="frame" x="56" y="128" width="208" height="224.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Zn-aS-ZKa">
+                                        <rect key="frame" x="0.0" y="0.5" width="100.5" height="108"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="70"/>
+                                        <state key="normal" title="0">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DEm-0I-oxY">
+                                        <rect key="frame" x="108" y="1" width="100" height="108"/>
+                                        <state key="normal" image="champagne">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9K7-EJ-tA1">
+                                        <rect key="frame" x="108" y="117" width="100" height="108"/>
+                                        <state key="normal" image="space">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HaK-pf-EWv">
+                                        <rect key="frame" x="0.0" y="117" width="100.5" height="108"/>
+                                        <state key="normal" image="lightning">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="9K7-EJ-tA1" secondAttribute="bottom" constant="0.5" id="JTu-gP-Kgi"/>
+                                    <constraint firstItem="2Zn-aS-ZKa" firstAttribute="width" secondItem="zF1-EC-5iD" secondAttribute="width" multiplier="0.48" id="K4B-BH-l9f"/>
+                                    <constraint firstAttribute="trailing" secondItem="9K7-EJ-tA1" secondAttribute="trailing" id="WFM-vy-JZL"/>
+                                    <constraint firstItem="HaK-pf-EWv" firstAttribute="width" secondItem="2Zn-aS-ZKa" secondAttribute="width" id="a9c-kL-4bT"/>
+                                    <constraint firstItem="9K7-EJ-tA1" firstAttribute="height" secondItem="2Zn-aS-ZKa" secondAttribute="height" id="acu-2e-3aV"/>
+                                    <constraint firstItem="DEm-0I-oxY" firstAttribute="height" secondItem="2Zn-aS-ZKa" secondAttribute="height" id="agn-wd-ytr"/>
+                                    <constraint firstItem="2Zn-aS-ZKa" firstAttribute="top" secondItem="zF1-EC-5iD" secondAttribute="top" id="cd5-d4-6zL"/>
+                                    <constraint firstItem="9K7-EJ-tA1" firstAttribute="width" secondItem="2Zn-aS-ZKa" secondAttribute="width" id="eAY-he-8Ul"/>
+                                    <constraint firstItem="DEm-0I-oxY" firstAttribute="width" secondItem="2Zn-aS-ZKa" secondAttribute="width" id="mqA-No-FB9"/>
+                                    <constraint firstAttribute="trailing" secondItem="DEm-0I-oxY" secondAttribute="trailing" id="obt-69-O56"/>
+                                    <constraint firstItem="DEm-0I-oxY" firstAttribute="top" secondItem="zF1-EC-5iD" secondAttribute="top" id="uUm-fZ-8aN"/>
+                                    <constraint firstAttribute="bottom" secondItem="HaK-pf-EWv" secondAttribute="bottom" constant="0.5" id="v5L-sY-bKP"/>
+                                    <constraint firstItem="HaK-pf-EWv" firstAttribute="leading" secondItem="zF1-EC-5iD" secondAttribute="leading" id="vkt-sY-KQt"/>
+                                    <constraint firstItem="2Zn-aS-ZKa" firstAttribute="height" secondItem="zF1-EC-5iD" secondAttribute="height" multiplier="0.48" id="wcv-bj-A7o"/>
+                                    <constraint firstItem="2Zn-aS-ZKa" firstAttribute="leading" secondItem="zF1-EC-5iD" secondAttribute="leading" id="xpP-kZ-UV4"/>
+                                    <constraint firstItem="HaK-pf-EWv" firstAttribute="height" secondItem="2Zn-aS-ZKa" secondAttribute="height" id="ykd-N8-e5s"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.6588235294117647" green="0.84705882352941175" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="zF1-EC-5iD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="40" id="4Vx-tY-oED"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bBb-TK-8I6" secondAttribute="trailing" id="8tX-cU-m6U"/>
+                            <constraint firstItem="zF1-EC-5iD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="AMT-08-WcJ"/>
+                            <constraint firstItem="bBb-TK-8I6" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Dok-qS-vbP"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="nqP-UC-BTl" secondAttribute="bottom" constant="20" id="GqE-LG-5db"/>
+                            <constraint firstItem="bBb-TK-8I6" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="ap2-vY-iPb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nqP-UC-BTl" secondAttribute="trailing" id="gZb-oV-ffE"/>
+                            <constraint firstItem="zF1-EC-5iD" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="13:30" id="jvh-Ua-sYE"/>
+                            <constraint firstItem="zF1-EC-5iD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="num-yV-hhn"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="135" y="138.75"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="champagne" width="49" height="50"/>
+        <image name="lightning" width="29" height="50"/>
+        <image name="space" width="47" height="50"/>
+    </resources>
 </document>
