@@ -1,5 +1,4 @@
 # FizzBuzz in Swift!
-![Travis CI](https://travis-ci.org/Simba14/Fizzbuzz-Swift.svg?branch=master)
 
 My first attempt at using Swift, the general purpose language developed by Apple, by completing the infamous FizzBuzz kata.
 
